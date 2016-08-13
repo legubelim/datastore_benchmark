@@ -1,4 +1,4 @@
-# Druid IO benchmark for Search Analysis
+# Druid IO benchmark
 _G. LEGRAND_
 
 This package was built to benchmark Druid IO in a Business Intelligence context (I.e. mostly data aggregation). It allows loading data in an efficient way and to run some aggregation queries (and record the response times). 
@@ -14,10 +14,8 @@ As you can see in the official documentation Druid IO requires to start ZooKeepe
 * When running with local hadoop we found no other way to prevent writes into /tmp than to create symbolic links:
 
 ```
-
  ln -s /my/tmp/path/hadoop-legrandg /tmp/
  ln -s /my/tmp/path/hsperfdata_legrandg /tmp/
-
 ```
 
 * We faced failures because of a limit in the number of allowed thread in the configuration: we had to increase the setting druid.server.http.numThreads from 8 to 10 in some runtime.properties file

@@ -26,12 +26,10 @@ We used the MongoDB Python client pymongo.
 The typical benchmark scenario:
 
 ```
-
 ./mg_drop.py
 ./mg_create_indexes.py
 ./mg_load_all.py ../data > load_stat.out
 ./mg_search_bench.py     > search_stat.out
-
 ```
 
 ### Data load

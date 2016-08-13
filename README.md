@@ -85,6 +85,6 @@ In many cases it is not necessarily worth to explore all data to get relevant re
 
 In the benchmark script each query is ran several times with different sets of inputs: different search months, origins, departure months, origin countries, destination countries, sampling level.
 
-### results
+### Results
 
 The benchmark script does not show the results of the queries but logs (in stdout) stats with the kind of search, the sampling level, the number of scanned data (if available) and the response time in order to allow comparison between data stores.

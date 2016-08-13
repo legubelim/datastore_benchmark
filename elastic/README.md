@@ -34,11 +34,9 @@ We directly used the Elastic Search REST APIs. We could have used the python cli
 The typical benchmark scenario:
 
 ```
-
 ./el_create_index.py
 ./el_load_all.py ../data > load_stat.out
 ./el_search_bench.py     > search_stat.out
-
 ```
 
 ### Data load
@@ -50,9 +48,6 @@ To increase the throughput it is better to launch several loader scripts in para
 The load process inserts bulks of data for better efficiency.
 
 Finally the load process logs (on stdout) the size and response time for each inserted bulk. Not sure it is reliable though since the load can be done asynchronously by the data store. It is probably better to look at the time necessary to load a big set of data.
-
-
-
 
 
 ## Some tips
